@@ -1,0 +1,2 @@
+nvcc -O3 -shared -std=c++11 -Xcompiler -fPIC $(python3 -m pybind11 --includes) change_element.cu -o change_element$(python3-config --extension-suffix)
+nvcc -O3 -shared -std=c++11 -Xcompiler -fPIC $(python3 -m pybind11 --includes) vecadd.cu -o vecadd$(python3-config --extension-suffix)
