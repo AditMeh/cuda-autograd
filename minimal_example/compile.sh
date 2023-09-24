@@ -1,0 +1,1 @@
+nvcc -O3 -Xcompiler -fPIC -shared -std=c++11 $(python3 -m pybind11 --includes) file1.cu -o example$(python3-config --extension-suffix) -I /usr/local/cuda/include
